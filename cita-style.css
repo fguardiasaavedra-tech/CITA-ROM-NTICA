@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#F5EFEB;
+    font-family:'Segoe UI',sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    height:100vh;
+    overflow:hidden;
+}
+
+.card{
+
+    width:500px;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.15);
+
+    position:relative;
+    z-index:10;
+}
+
+h1{
+    color:#B76E79;
+    margin-bottom:20px;
+}
+
+img{
+
+    width:250px;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+}
+
+#mensaje{
+
+    margin-bottom:25px;
+
+    color:#555;
+
+    font-size:18px;
+}
+
+.botones{
+
+    position:relative;
+
+    height:100px;
+}
+
+button{
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#si{
+
+    background:#4CAF50;
+
+    color:white;
+
+    font-size:18px;
+}
+
+#no{
+
+    background:#E53935;
+
+    color:white;
+
+    position:absolute;
+}
+
+input,
+select{
+
+    width:90%;
+
+    padding:10px;
+
+    margin:10px 0;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+}
+
+#confirmar{
+
+    background:#D4AF37;
+
+    color:white;
+
+    font-size:18px;
+}
+
+.oculto{
+    display:none;
+}
+
+.celebracion{
+
+    font-size:30px;
+
+    margin:20px;
+}
+
+.final{
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    color:#B76E79;
+}
+
+#resumen{
+
+    font-size:20px;
+
+    line-height:2;
+}
+
+.hearts{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.hearts::before{
+
+    content:"❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
+
+    position:absolute;
+
+    font-size:25px;
+
+    width:100%;
+
+    animation:flotar 10s linear infinite;
+}
+
+@keyframes flotar{
+
+    from{
+        transform:translateY(100vh);
+    }
+
+    to{
+        transform:translateY(-100vh);
+    }
+}
