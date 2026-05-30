@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Cita ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hearts"></div>
+
+    <!-- PANTALLA 1 -->
+    <div id="pantalla1" class="card">
+
+        <h1>¿Quieres salir conmigo? ❤️</h1>
+
+        <img
+        id="imagen"
+        src="https://media.tenor.com/3x63SNMKPogAAAAC/cute-love.gif"
+        alt="amor">
+
+        <p id="mensaje">
+            Tengo una pregunta importante para ti...
+        </p>
+
+        <div class="botones">
+            <button id="si">Sí 💖</button>
+            <button id="no">No 😒</button>
+        </div>
+
+    </div>
+
+    <!-- PANTALLA 2 -->
+    <div id="pantalla2" class="card oculto">
+
+        <h1>❤️ ¡Sabía que dirías que sí! ❤️</h1>
+
+        <div class="celebracion">
+            ✨🎉✨🎉✨🎉✨
+        </div>
+
+        <h3>Escoge una fecha</h3>
+        <input type="date" id="fecha">
+
+        <h3>Escoge una hora</h3>
+        <input type="time" id="hora">
+
+        <h3>¿Qué te gustaría hacer?</h3>
+
+        <select id="lugar">
+            <option>Café ☕</option>
+            <option>Cine 🎬</option>
+            <option>Cena 🍝</option>
+            <option>Helados 🍦</option>
+            <option>Picnic 🌳</option>
+        </select>
+
+        <br><br>
+
+        <button id="confirmar">
+            Confirmar cita ❤️
+        </button>
+
+    </div>
+
+    <!-- PANTALLA 3 -->
+    <div id="pantalla3" class="card oculto">
+
+        <h1>💌 Nuestra cita está reservada</h1>
+
+        <div id="resumen"></div>
+
+        <p class="final">
+            Ahora sí... ya no puedes arrepentirte 😎❤️
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
